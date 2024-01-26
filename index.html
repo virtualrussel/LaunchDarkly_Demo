@@ -55,7 +55,9 @@
         // Initialize LaunchDarkly with the client-side ID and user context
         const context = {
             kind: 'user',
-            key: 'context-key-123abc'
+            key: 'user-key',
+            firstName: 'first_name',
+            groups: ['DT', 'LD']
         };
         const ldclient = LDClient.initialize('Client-side_ID', context); // Update to include the Client-side ID specific to your environment/Project
 
